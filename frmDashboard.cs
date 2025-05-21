@@ -57,7 +57,9 @@ namespace EDP_WinProject1
             this.Hide();
         }
 
-        private void viewAmount_Click(object sender, EventArgs e)
+
+
+        private void button1_Click(object sender, EventArgs e)
         {
             frmAmount myAmount = new frmAmount();
             myAmount.Show();
@@ -77,13 +79,5 @@ namespace EDP_WinProject1
             frmBranch.Show();
             this.Hide();
         }
-
-        private void viewAccounts_Click(object sender, EventArgs e)
-        {
-            frmAccounts frmAccounts = new frmAccounts();
-            frmAccounts.Show();
-            this.Hide();
-        }
-
     }
 }

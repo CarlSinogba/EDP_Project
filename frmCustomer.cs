@@ -23,10 +23,5 @@ namespace EDP_WinProject1
             myform.Show();
             this.Hide();
         }
-        private void frmCustomer_Load(object sender, EventArgs e)
-        {
-            var dbManager = new DBManager();
-            DGcustomerlist.DataSource = dbManager.GetCustomerInfo();
-        }
     }
 }

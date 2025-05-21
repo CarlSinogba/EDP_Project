@@ -23,17 +23,5 @@ namespace EDP_WinProject1
             myform.Show();
             this.Hide();
         }
-        private void frmEmployee_Load(object sender, EventArgs e)
-        {
-            var dbManager = new DBManager();
-            DGemployee.DataSource = dbManager.GetEmployeeInfo();
-        }
-
-        private void modifyEmployees_Click(object sender, EventArgs e)
-        {
-            frmModifyEmployee myEmployee = new frmModifyEmployee();
-            myEmployee.Show();
-            this.Hide();
-        }
     }
 }

@@ -23,10 +23,5 @@ namespace EDP_WinProject1
             myform.Show();
             this.Hide();
         }
-        private void frmBranches_Load(object sender, EventArgs e)
-        {
-            var dbManager = new DBManager();
-            DGbranches.DataSource = dbManager.GetBranchesInfo();
-        }
     }
 }
