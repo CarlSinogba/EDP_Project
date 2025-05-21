@@ -23,5 +23,10 @@ namespace EDP_WinProject1
             myform.Show();
             this.Hide();
         }
+        private void frmReceipt_Load(object sender, EventArgs e)
+        {
+            var dbManager = new DBManager();
+            DGreceipt.DataSource = dbManager.GetReceiptInfo();
+        }
     }
 }

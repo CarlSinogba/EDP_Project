@@ -23,5 +23,10 @@ namespace EDP_WinProject1
             myform.Show();
             this.Hide();
         }
+        private void frmComaker_Load(object sender, EventArgs e)
+        {
+            var dbManager = new DBManager();
+            DGcomaker.DataSource = dbManager.GetComakerInfo();
+        }
     }
 }

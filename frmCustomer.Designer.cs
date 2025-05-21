@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.labelReturn = new System.Windows.Forms.Label();
+            this.DGcustomerlist = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DGcustomerlist)).BeginInit();
             this.SuspendLayout();
             // 
             // labelReturn
@@ -37,22 +39,35 @@
             this.labelReturn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelReturn.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelReturn.Location = new System.Drawing.Point(32, 28);
+            this.labelReturn.Location = new System.Drawing.Point(24, 23);
+            this.labelReturn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelReturn.Name = "labelReturn";
-            this.labelReturn.Size = new System.Drawing.Size(165, 20);
+            this.labelReturn.Size = new System.Drawing.Size(141, 17);
             this.labelReturn.TabIndex = 1;
             this.labelReturn.Text = "Return to Dahsboard";
             this.labelReturn.Click += new System.EventHandler(this.labelReturn_Click);
             // 
+            // DGcustomerlist
+            // 
+            this.DGcustomerlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGcustomerlist.Location = new System.Drawing.Point(13, 44);
+            this.DGcustomerlist.Name = "DGcustomerlist";
+            this.DGcustomerlist.Size = new System.Drawing.Size(575, 310);
+            this.DGcustomerlist.TabIndex = 2;
+            // 
             // frmCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.DGcustomerlist);
             this.Controls.Add(this.labelReturn);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer List";
+            this.Load += new System.EventHandler(this.frmCustomer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DGcustomerlist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -61,5 +76,6 @@
         #endregion
 
         private System.Windows.Forms.Label labelReturn;
+        private System.Windows.Forms.DataGridView DGcustomerlist;
     }
 }
