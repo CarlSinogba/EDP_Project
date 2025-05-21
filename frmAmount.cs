@@ -23,5 +23,11 @@ namespace EDP_WinProject1
             myform.Show();
             this.Hide();
         }
+        private void frmAmount_Load(object sender, EventArgs e)
+        {
+            var dbManager = new DBManager();
+            DGamount.DataSource = dbManager.GetAmountInfo();
+            DGtotal.DataSource = dbManager.GetAmountTotalInfo();
+        }
     }
 }
